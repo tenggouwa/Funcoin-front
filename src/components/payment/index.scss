@@ -1,0 +1,33 @@
+.payment{
+  padding: 70px 0;
+  background-color: #1E8CE5;
+  border-bottom: 2px solid #EAEAEA;
+  color: #fff;
+  .payment-main{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    .payment-main-left{
+        flex: 2;
+        p{
+          font-size: 32px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+    }
+    .payment-main-right{
+        flex: 1;
+        div{
+          width: 100px;
+          height: 40px;
+          margin-top: 40px;
+          background: #fff;
+          color: #000;
+          line-height: 40px;
+          text-align: center;
+          cursor: pointer;
+          float: right;
+        }
+    }
+  }
+}

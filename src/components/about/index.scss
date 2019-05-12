@@ -1,0 +1,43 @@
+.about{
+  padding: 100px 0;
+  .about-main{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    .about-main-left{
+      float: left;
+      padding: 0 20px;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .about-main-right{
+      float: left;
+      padding: 20px;
+      width: 50%;
+      h3{
+        font-size: 24px;
+        font-weight: normal; 
+        padding-bottom: 15px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 15px;
+        position: relative;
+      }
+      h3::after{
+        content: " ";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 40%;
+        border-bottom: 1px solid #45aed6;
+      }
+      p{
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: #64686d;
+        font-size: 14px;
+      }
+    }
+  }
+}
