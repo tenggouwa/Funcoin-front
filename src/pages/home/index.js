@@ -6,6 +6,9 @@ import Payexperence from '@/components/payexperence'
 import Product from '@/components/product'
 import Scenario from '@/components/scenario'
 import Fee from '@/components/fee'
+import Members from '@/components/members'
+import New from '@/components/new'
+import Footer from '@/components/footer'
 import './home.scss'
 
 export default class Home extends Component {
@@ -26,6 +29,9 @@ export default class Home extends Component {
                 <Product />
                 <Scenario />
                 <Fee />
+                <Members />
+                <New />
+                <Footer />
             </div>
         )
     }

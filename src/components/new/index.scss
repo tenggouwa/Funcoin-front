@@ -1,0 +1,40 @@
+.new{
+  padding: 50px;
+  .new-main{
+    width: 1200px;
+    margin: 0 auto;
+    .new-main-top{
+      text-align: center;
+      h2{
+        font-size: 38px;
+        color: #272727;
+        position: relative;
+        padding-bottom: 20px;
+        margin: 0 0 20px;
+      }
+      h2:before{
+        content: "";
+        position: absolute;
+        width: 140px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -70px;
+        height: 4px;
+        background: #1E8CE5;
+      }
+      p{
+        font-size: 14px;
+        color: #64686d;
+      }
+    }
+    .new-main-content{
+      text-align: center;
+      div{
+        color: #FFF;
+        padding: 12px 16px;
+        background-color: #337ab7;
+        display: inline-block;
+      }
+    }
+  }
+}

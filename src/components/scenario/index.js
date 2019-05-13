@@ -34,8 +34,8 @@ export default class Scenario extends Component {
             <div className="scenario" id="scenario">
                 <div className="scenario-main">
                     <div className="scenario-main-top">
-                        <h2>产品特性</h2>
-                        <p>安全可靠，极速稳定</p>
+                        <h2>全场景支付</h2>
+                        <p>提供支付接入方案，可在各种场景中流畅交易</p>
                     </div>
                     <div className="scenario-main-content">
                         {

@@ -11,24 +11,48 @@ export default class Fee extends Component {
     }
     render() {
         const renderList = [{
-            image: '',
-            title: '论坛社区',
-            content: '平台点卡、积分充值等'
+            active: false,
+            id: 1,
+            h1: '1%',
+            mountTrade: '月交易额1万以下',
+            content1: '0月费',
+            content2: 'API接入技术指导',
+            content3: 'API对接安全性检查',
+            content4: '7 x 12 小时在线客服',
+            content5: '7 x 24 小时紧急电话客服支持'
         },
         {
-            image: '',
-            title: '游戏领域',
-            content: '网游、手机游戏、棋牌等'
+            active: true,
+            id: 2,
+            h1: '0.8%',
+            mountTrade: '月交易额1万-3万',
+            content1: '0月费',
+            content2: 'API接入技术指导',
+            content3: 'API对接安全性检查',
+            content4: '7 x 12 小时在线客服',
+            content5: '7 x 24 小时紧急电话客服支持'
         },
         {
-            image: '',
-            title: '娱乐领域',
-            content: '直播、微信小程序等'
+            active: false,
+            id: 3,
+            h1: '0.6%',
+            mountTrade: '月交易额3万-7万',
+            content1: '0月费',
+            content2: 'API接入技术指导',
+            content3: 'API对接安全性检查',
+            content4: '7 x 12 小时在线客服',
+            content5: '7 x 24 小时紧急电话客服支持'
         },
         {
-            image: '',
-            title: '电商领域',
-            content: '微商、电商等'
+            active: false,
+            id: 4,
+            h1: '0.4%',
+            mountTrade: '月交易额7万元以上',
+            content1: '0月费',
+            content2: 'API接入技术指导',
+            content3: 'API对接安全性检查',
+            content4: '7 x 12 小时在线客服',
+            content5: '7 x 24 小时紧急电话客服支持'
         }]
         return (
             <div className="fee" id="fee">
@@ -41,11 +65,20 @@ export default class Fee extends Component {
                         {
                             renderList.map(item => (
                                 <div className="fee-main-item">
-                                    <div className="fee-img">
-                                        {item.image}
+                                    <div className={item.active ? 'fee-item-top fee-item-top-active' : 'fee-item-top'}>
+                                        <div>
+                                            <p>{item.h1}</p>
+                                            <span>{item.mountTrade}</span>
+                                        </div>
+                                        <p className="mountFee">{item.content1}</p>
                                     </div>
-                                    <p>{item.title}</p>
-                                    <span>{item.content}</span>
+                                    <div className="fee-item-bottom">
+                                        <p>{item.content2}</p>
+                                        <p>{item.content3}</p>
+                                        <p>{item.content4}</p>
+                                        <p>{item.content5}</p>
+                                        <div>立即加入</div>
+                                    </div>
                                 </div>
                             ))
                         }
