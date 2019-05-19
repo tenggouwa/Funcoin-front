@@ -42,5 +42,6 @@ module.exports = {
     'use-isnan': 0,
     'prefer-template': 0,
     'no-multi-assign': 0,
+    'consistent-return': 0
   }
 }

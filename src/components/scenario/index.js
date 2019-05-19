@@ -40,7 +40,7 @@ export default class Scenario extends Component {
                     <div className="scenario-main-content">
                         {
                             renderList.map(item => (
-                                <div className="scenario-main-item">
+                                <div className="scenario-main-item" key={item.title}>
                                     <div className="scenario-img">
                                         {item.image}
                                     </div>

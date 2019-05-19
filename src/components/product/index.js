@@ -50,7 +50,7 @@ export default class Product extends Component {
                     <div className="product-main-content">
                         {
                             renderList.map(item => (
-                                <div className="product-main-item">
+                                <div className="product-main-item" key={item.title}>
                                     <div className="product-icon">
                                         <i className={`iconfont ${item.image}`} />
                                     </div>

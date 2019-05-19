@@ -1,5 +1,6 @@
 .payexperence{
   padding: 50px;
+  padding-top: 130px;
   .payexperence-main{
     width: 1200px;
     margin: 0 auto;
@@ -57,6 +58,10 @@
             background: #337ab7;
             cursor: pointer;
             text-align: center;
+            transition: background 0.3s linear;
+          }
+          div:hover{
+            background: #dab100;
           }
         }
       }

@@ -2,6 +2,13 @@
   // height: 50px;
   padding: 0 50px;
   display: flex;
+  position: fixed;
+  top: 0;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+  z-index: 1;
   .header-logo{
     flex: 1;
   }
@@ -9,7 +16,8 @@
     flex: 1;
     li{
       float: left;
-      padding: 28px 10px 35px 10px;
+      line-height: 74px;
+      padding: 0 15px;
       cursor: pointer;
     }
     .active{

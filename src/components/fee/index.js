@@ -64,7 +64,7 @@ export default class Fee extends Component {
                     <div className="fee-main-content">
                         {
                             renderList.map(item => (
-                                <div className="fee-main-item">
+                                <div className="fee-main-item" key={item.id}>
                                     <div className={item.active ? 'fee-item-top fee-item-top-active' : 'fee-item-top'}>
                                         <div>
                                             <p>{item.h1}</p>

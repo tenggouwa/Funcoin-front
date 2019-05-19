@@ -81,6 +81,11 @@
             background: #337ab7;
             color: #fff;
             display: inline-block;
+            cursor: pointer;
+            transition: background 0.3s linear;
+          }
+          div:hover{
+            background: #dab100;
           }
         }
       }
